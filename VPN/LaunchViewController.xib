@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LaunchViewController" customModule="VPN" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HVZ-Ku-vgt">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vector-8" translatesAutoresizingMaskIntoConstraints="NO" id="Uga-hL-3uq">
+                            <rect key="frame" x="0.0" y="590" width="414" height="306"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vector-9" translatesAutoresizingMaskIntoConstraints="NO" id="YBQ-Gd-RzG">
+                            <rect key="frame" x="135" y="865" width="144" height="31"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 14" translatesAutoresizingMaskIntoConstraints="NO" id="Rkf-EY-pAq">
+                            <rect key="frame" x="106" y="272" width="202" height="192"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XGate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvT-gJ-EvU">
+                            <rect key="frame" x="175.5" y="464" width="63.5" height="27"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="23"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We defend your rights to free  choice and privacy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wg2-HZ-dBm">
+                            <rect key="frame" x="127.5" y="496" width="159" height="28"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="AppOrangeColor"/>
+                    <constraints>
+                        <constraint firstItem="PW1-QM-HFa" firstAttribute="trailing" secondItem="Uga-hL-3uq" secondAttribute="trailing" id="10g-R9-iM7"/>
+                        <constraint firstItem="wg2-HZ-dBm" firstAttribute="centerX" secondItem="HVZ-Ku-vgt" secondAttribute="centerX" id="FJa-8g-sVi"/>
+                        <constraint firstItem="wg2-HZ-dBm" firstAttribute="top" secondItem="yvT-gJ-EvU" secondAttribute="bottom" constant="5" id="JuK-ZE-hLj"/>
+                        <constraint firstItem="Rkf-EY-pAq" firstAttribute="centerY" secondItem="HVZ-Ku-vgt" secondAttribute="centerY" constant="-80" id="MNL-CP-Aur"/>
+                        <constraint firstAttribute="bottom" secondItem="Uga-hL-3uq" secondAttribute="bottom" id="OEO-EF-qra"/>
+                        <constraint firstItem="yvT-gJ-EvU" firstAttribute="top" secondItem="Rkf-EY-pAq" secondAttribute="bottom" id="SBL-HB-WVx"/>
+                        <constraint firstItem="yvT-gJ-EvU" firstAttribute="centerX" secondItem="HVZ-Ku-vgt" secondAttribute="centerX" id="aoo-hO-zBE"/>
+                        <constraint firstItem="YBQ-Gd-RzG" firstAttribute="centerX" secondItem="HVZ-Ku-vgt" secondAttribute="centerX" id="eHj-2z-Jh5"/>
+                        <constraint firstItem="Uga-hL-3uq" firstAttribute="leading" secondItem="PW1-QM-HFa" secondAttribute="leading" id="rJQ-lD-yfc"/>
+                        <constraint firstItem="Rkf-EY-pAq" firstAttribute="centerX" secondItem="HVZ-Ku-vgt" secondAttribute="centerX" id="s5M-7l-ZSE"/>
+                        <constraint firstAttribute="bottom" secondItem="YBQ-Gd-RzG" secondAttribute="bottom" id="yCP-iM-iZD"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="PW1-QM-HFa"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="HVZ-Ku-vgt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2n1-HV-tGX"/>
+                <constraint firstItem="HVZ-Ku-vgt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Mxc-sN-BkO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HVZ-Ku-vgt" secondAttribute="trailing" id="gmi-RO-Dse"/>
+                <constraint firstAttribute="bottom" secondItem="HVZ-Ku-vgt" secondAttribute="bottom" id="pif-GQ-O9P"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Group 14" width="202" height="192"/>
+        <image name="Vector-8" width="375" height="306"/>
+        <image name="Vector-9" width="144" height="31"/>
+        <namedColor name="AppOrangeColor">
+            <color red="0.95294117647058818" green="0.41568627450980389" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

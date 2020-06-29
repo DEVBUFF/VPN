@@ -1,0 +1,16 @@
+PODS:
+  - TPInAppReceipt (2.3.4)
+
+DEPENDENCIES:
+  - TPInAppReceipt
+
+SPEC REPOS:
+  trunk:
+    - TPInAppReceipt
+
+SPEC CHECKSUMS:
+  TPInAppReceipt: 00fbe75283ae359f2242b2c8718cdaffb615bd65
+
+PODFILE CHECKSUM: 763769489d2c894287cb0149f987220d9035cb1c
+
+COCOAPODS: 1.8.3

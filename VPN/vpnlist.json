@@ -1,0 +1,98 @@
+[
+  {
+     "hostname": "172.105.47.123",
+     "isFree": false,
+     "countryCode": "IN",
+     "location": "Mumbai",
+     "country": "India",
+     "name": "server1",
+     "serverID": 1,
+     "user": "server1",
+     "pass": "B39-VHZ-R0v-4bc",
+     "psk": "l66h"
+  },
+  {
+     "hostname": "45.79.32.136",
+     "isFree": false,
+     "countryCode": "US",
+     "location": "Dallas",
+     "country": "United States",
+     "name": "server2",
+     "serverID": 2,
+     "user": "server2",
+     "pass": "B39-VHZ-R0v-4bc",
+     "psk": "l66h"
+  },
+  {
+     "hostname": "139.162.162.93",
+     "isFree": false,
+     "countryCode": "DE",
+     "location": "Frankfurt",
+     "country": "Germany",
+     "name": "server3",
+     "serverID": 3,
+     "user": "server3",
+     "pass": "B39-VHZ-R0v-4bc",
+     "psk": "l66h"
+  },
+  {
+     "hostname": "172.105.193.12",
+     "isFree": false,
+     "countryCode": "JP",
+     "location": "Tokyo",
+     "country": "Japan",
+     "name": "server4",
+     "serverID": 4,
+     "user": "server4",
+     "pass": "B39-VHZ-R0v-4bc",
+     "psk": "l66h"
+  },
+  {
+     "hostname": "45.79.90.153",
+     "isFree": false,
+     "countryCode": "US",
+     "location": "California Fremont",
+     "country": "United States",
+     "name": "server5",
+     "serverID": 5,
+     "user": "server5",
+     "pass": "B39-VHZ-R0v-4bc",
+     "psk": "l66h"
+  },
+  {
+     "hostname": "139.162.244.161",
+     "isFree": false,
+     "countryCode": "GB",
+     "location": "London",
+     "country": "United Kingdom",
+     "name": "server6",
+     "serverID": 6,
+     "user": "server6",
+     "pass": "B39-VHZ-R0v-4bc",
+     "psk": "l66h"
+  },
+  {
+     "hostname": "103.3.61.149",
+     "isFree": false,
+     "countryCode": "SG",
+     "location": "Singapore",
+     "country": "Singapore",
+     "name": "server7",
+     "serverID": 7,
+     "user": "server3",
+     "pass": "B39-VHZ-R0v-4bc",
+     "psk": "kf7e"
+  },
+  {
+     "hostname": "45.33.39.97",
+     "isFree": false,
+     "countryCode": "US",
+     "location": "Fremont",
+     "country": "United States",
+     "name": "server8",
+     "serverID": 8,
+     "user": "server8",
+     "pass": "B39-VHZ-R0v-4bc",
+     "psk": "l66h"
+  }
+]

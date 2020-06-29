@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrivacyViewController" customModule="VPN" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonHolderView" destination="Do1-C4-vjX" id="F19-Fj-aUz"/>
+                <outlet property="holderView" destination="8yR-sZ-QsE" id="Muo-KG-plj"/>
+                <outlet property="view" destination="lNK-dr-z0x" id="8CZ-eJ-mtL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="lNK-dr-z0x">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.orange" translatesAutoresizingMaskIntoConstraints="NO" id="IRH-zU-Mmx">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="403"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxu-ao-rNX">
+                    <rect key="frame" x="20" y="79" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="BEQ-m9-Sha"/>
+                    </constraints>
+                    <state key="normal" image="back"/>
+                    <connections>
+                        <action selector="backButtonAction:" destination="-1" eventType="touchUpInside" id="iVk-d1-yC5"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yR-sZ-QsE">
+                    <rect key="frame" x="0.0" y="163" width="414" height="733"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hec-8K-Jpj">
+                            <rect key="frame" x="0.0" y="20" width="414" height="713"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wYF-yi-Zfk">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="935.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Private policy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Civ-1F-L6m">
+                                            <rect key="frame" x="10" y="20" width="394" height="34.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="34.329999999999998" id="Ffe-Hj-bHG"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="28"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eat-wv-7XL">
+                                            <rect key="frame" x="20" y="84.5" width="374" height="701"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <string key="text">Payment will be credited to your iTunes account upon confirmation of purchase. Subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period. Payment for the update will be charged from the account within 24 hours prior to the end of the current period.  Payment will be credited to your iTunes account upon confirmation of purchase. Subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period. Payment for the update will be charged from the account within 24 hours prior to the end of the current period.  Payment will be credited to your iTunes account upon confirmation of purchase. Subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period. Payment for the update will be charged from the account within 24 hours prior to the end of the current period.  Payment will be credited to your iTunes account upon confirmation of purchase. Subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period. Payment for the update will be charged from the account within 24 hours prior to the end of the current period.  Payment will be credited to your iTunes account upon confirmation of purchase. Subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period. Payment for the update will be charged from the account within 24 hours prior to the end of the current period.  Payment will be credited to your iTunes account upon confirmation of purchase. Subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period. Payment for the update will be charged from the account within 24 hours prior to the end of the current period.</string>
+                                            <color key="textColor" red="0.54509803921568623" green="0.58039215686274503" blue="0.65098039215686276" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="eat-wv-7XL" secondAttribute="bottom" constant="150" id="EDk-80-kkU"/>
+                                        <constraint firstItem="Civ-1F-L6m" firstAttribute="leading" secondItem="wYF-yi-Zfk" secondAttribute="leading" constant="10" id="Fji-ZU-le9"/>
+                                        <constraint firstItem="Civ-1F-L6m" firstAttribute="top" secondItem="wYF-yi-Zfk" secondAttribute="top" constant="20" id="Hzc-qu-mGb"/>
+                                        <constraint firstItem="eat-wv-7XL" firstAttribute="leading" secondItem="wYF-yi-Zfk" secondAttribute="leading" constant="20" id="N9s-QN-ffZ"/>
+                                        <constraint firstAttribute="trailing" secondItem="Civ-1F-L6m" secondAttribute="trailing" constant="10" id="O5d-Gg-D90"/>
+                                        <constraint firstItem="eat-wv-7XL" firstAttribute="top" secondItem="Civ-1F-L6m" secondAttribute="bottom" constant="30" id="U1T-3g-ddA"/>
+                                        <constraint firstAttribute="trailing" secondItem="eat-wv-7XL" secondAttribute="trailing" constant="20" id="xg7-rA-wWF"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="wYF-yi-Zfk" firstAttribute="top" secondItem="Hec-8K-Jpj" secondAttribute="top" id="Lkx-v4-MO9"/>
+                                <constraint firstAttribute="bottom" secondItem="wYF-yi-Zfk" secondAttribute="bottom" id="OGD-0A-yCn"/>
+                                <constraint firstItem="wYF-yi-Zfk" firstAttribute="leading" secondItem="Hec-8K-Jpj" secondAttribute="leading" id="Trk-yY-77a"/>
+                                <constraint firstAttribute="trailing" secondItem="wYF-yi-Zfk" secondAttribute="trailing" id="W6S-gF-Msw"/>
+                                <constraint firstItem="wYF-yi-Zfk" firstAttribute="height" secondItem="Hec-8K-Jpj" secondAttribute="height" priority="250" id="mSv-Os-PbD"/>
+                                <constraint firstItem="wYF-yi-Zfk" firstAttribute="centerX" secondItem="Hec-8K-Jpj" secondAttribute="centerX" id="tDq-aS-3jj"/>
+                            </constraints>
+                        </scrollView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Do1-C4-vjX">
+                            <rect key="frame" x="0.0" y="603" width="414" height="130"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKt-DE-QYM">
+                                    <rect key="frame" x="20" y="34" width="374" height="62"/>
+                                    <color key="backgroundColor" name="AppOrangeColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="62" id="xOp-Uf-wXR"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                    <state key="normal" title="Start your 7 day trial"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="18"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="startTrialButtonAction:" destination="-1" eventType="touchUpInside" id="taI-Ch-jMa"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" name="AppGrayColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="qKt-DE-QYM" secondAttribute="trailing" constant="20" id="7qF-Pn-Jh2"/>
+                                <constraint firstAttribute="height" constant="130" id="JJV-wM-Icm"/>
+                                <constraint firstItem="qKt-DE-QYM" firstAttribute="leading" secondItem="Do1-C4-vjX" secondAttribute="leading" constant="20" id="bPz-D2-8t4"/>
+                                <constraint firstItem="qKt-DE-QYM" firstAttribute="centerY" secondItem="Do1-C4-vjX" secondAttribute="centerY" id="bpm-T4-Ed7"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Do1-C4-vjX" secondAttribute="bottom" id="QtN-60-uvv"/>
+                        <constraint firstItem="Do1-C4-vjX" firstAttribute="leading" secondItem="8yR-sZ-QsE" secondAttribute="leading" id="cjM-oL-HN4"/>
+                        <constraint firstAttribute="bottom" secondItem="Hec-8K-Jpj" secondAttribute="bottom" id="fhP-Ys-CA5"/>
+                        <constraint firstAttribute="trailing" secondItem="Hec-8K-Jpj" secondAttribute="trailing" id="kdy-cY-nAY"/>
+                        <constraint firstItem="Hec-8K-Jpj" firstAttribute="top" secondItem="8yR-sZ-QsE" secondAttribute="top" constant="20" id="oEd-pW-vdR"/>
+                        <constraint firstItem="Hec-8K-Jpj" firstAttribute="leading" secondItem="8yR-sZ-QsE" secondAttribute="leading" id="qwZ-p5-MSn"/>
+                        <constraint firstAttribute="trailing" secondItem="Do1-C4-vjX" secondAttribute="trailing" id="yfh-uQ-ept"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hui.znaet" translatesAutoresizingMaskIntoConstraints="NO" id="5J0-a4-3XF">
+                    <rect key="frame" x="129" y="26" width="156" height="150"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" name="AppOrangeColor"/>
+            <constraints>
+                <constraint firstItem="8yR-sZ-QsE" firstAttribute="top" secondItem="dxu-ao-rNX" secondAttribute="bottom" constant="40" id="2er-Sv-pQi"/>
+                <constraint firstItem="8yR-sZ-QsE" firstAttribute="leading" secondItem="aq8-f9-hnl" secondAttribute="leading" id="5Eo-BC-0w0"/>
+                <constraint firstItem="aq8-f9-hnl" firstAttribute="trailing" secondItem="IRH-zU-Mmx" secondAttribute="trailing" id="GRe-QB-kfz"/>
+                <constraint firstItem="dxu-ao-rNX" firstAttribute="top" secondItem="aq8-f9-hnl" secondAttribute="top" constant="35" id="GgN-Qo-UKH"/>
+                <constraint firstItem="5J0-a4-3XF" firstAttribute="centerX" secondItem="lNK-dr-z0x" secondAttribute="centerX" id="LwQ-L2-Es3"/>
+                <constraint firstItem="dxu-ao-rNX" firstAttribute="leading" secondItem="aq8-f9-hnl" secondAttribute="leading" constant="20" id="TxN-vZ-HpO"/>
+                <constraint firstItem="8yR-sZ-QsE" firstAttribute="trailing" secondItem="aq8-f9-hnl" secondAttribute="trailing" id="V3j-oa-XeH"/>
+                <constraint firstItem="IRH-zU-Mmx" firstAttribute="top" secondItem="lNK-dr-z0x" secondAttribute="top" id="bmM-ux-vyO"/>
+                <constraint firstItem="IRH-zU-Mmx" firstAttribute="leading" secondItem="aq8-f9-hnl" secondAttribute="leading" id="d5A-Sg-WHW"/>
+                <constraint firstItem="5J0-a4-3XF" firstAttribute="centerY" secondItem="dxu-ao-rNX" secondAttribute="centerY" id="ssi-84-eTW"/>
+                <constraint firstAttribute="bottom" secondItem="8yR-sZ-QsE" secondAttribute="bottom" id="y8Y-sY-RWB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="aq8-f9-hnl"/>
+            <point key="canvasLocation" x="136.23188405797103" y="137.94642857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="44" height="44"/>
+        <image name="background.orange" width="375" height="403"/>
+        <image name="hui.znaet" width="156" height="150"/>
+        <namedColor name="AppGrayColor">
+            <color red="0.88999998569488525" green="0.9100000262260437" blue="0.93699997663497925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppOrangeColor">
+            <color red="0.95300000905990601" green="0.41600000858306885" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

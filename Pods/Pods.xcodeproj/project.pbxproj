@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		046257E5C4E46E5E020A5BA9327BAFBB /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E5065CC7C02C186FF73B01458977DA /* Date+Extension.swift */; };
+		068137FD226A608E6395DFF7C38ED395 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		10F76FB7BEF4370E9549C4F6651A818A /* IARError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81F024B391B4DCE72412292B3B5002 /* IARError.swift */; };
+		15D260842FD2192D0B00988FEEC0AE35 /* InAppReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33740C59AECB36BB9E3E2A779BB21B3E /* InAppReceipt.swift */; };
+		1A4518EEB2AD1D73B53A0517F902B44F /* Pods-VPN-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 61E5E3F5DF8B435E6F3555055EE275CC /* Pods-VPN-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		252CA55ECA86DEBE0244E2C0B48E6958 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E67334282F13722CC27202FFEFD2C3 /* Utils.swift */; };
+		2A2817925C0BA9FB58B6219F09831D49 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2382F2AB3F305322B073B011BFE5853E /* Data+Extension.swift */; };
+		2AB0261316EB7A26BCC86D716EF83EF8 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC086E9E182C3B4493BB709B813462A /* Array+Extension.swift */; };
+		3013D7DB3BEB194D689B344AF56B7DB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		3B0A0699070B7A5ACC03EDCAAC67C00C /* Asn1Coder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6CF5BF35D7B100708197B1F93DA83 /* Asn1Coder.swift */; };
+		50CF3DC71431C4BC8B2A9958F22C0810 /* PKCS7Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC6A2053B1254A21A4DA27D324D8990 /* PKCS7Helper.swift */; };
+		53B6DD266ACE2D050ECD1A67DE5BFED6 /* ASN1Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716856C6411A912F25CBA4908B142B5D /* ASN1Object.swift */; };
+		53F832FE9FDF98108E4259787B54D9F6 /* AppleIncRootCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = 7303D3974EC6CAC074E1FB19A97865ED /* AppleIncRootCertificate.cer */; };
+		5BB0BD7961F07C54255597B1AFFA1198 /* InAppPurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E2301B723D47908A0F63B41E18386E /* InAppPurchase.swift */; };
+		5F59646BF6B6AE6744596D6438FE1630 /* InAppReceiptPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9741AFFAA75C3DA5C396A55BFBB98C3 /* InAppReceiptPayload.swift */; };
+		6A2224F64586CCBE104B14B3AA07B1ED /* UInt32+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E446A32380FFE45ACCACD7148477DE1 /* UInt32+Extension.swift */; };
+		7B2D1026B47727ADBAFB6D72F3947B3A /* ASN1Object+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6B9BC62E2A973AAD145C97D356A1F3 /* ASN1Object+Sequence.swift */; };
+		7EA1951373E877157877F35004EE830A /* TPInAppReceipt-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E6C778990D5CDC5F06CF950B403768D /* TPInAppReceipt-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80CD1E39E54D50AB36686CAD532671CA /* TPInAppReceipt-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC1AABE7130208F90E6EA6E16D760B8 /* TPInAppReceipt-dummy.m */; };
+		94E72CE1F7EC2F86DEB7ECD090715A92 /* UInt16+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84536D4E134F91FB4B38B6FCE1B8E735 /* UInt16+Extension.swift */; };
+		9BC8C25298B01FF77E96D260EE2DFBEB /* ASN1Object+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5632C52970016B9F9830892B641A4DE /* ASN1Object+Helper.swift */; };
+		B0672C28DC3E2A48DABC76C2033BB4A2 /* Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F663D17639511C7C423257E315B6EBE1 /* Initialization.swift */; };
+		B19EEE553E73D42C55FDDE4F92CBA046 /* UInt64+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C57AAD9C72CB2F1E7C9545578AF5871 /* UInt64+Extension.swift */; };
+		B522AA083307C59AA770AF0C3F0ABD1B /* ASN1Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A5EA2DE18C1B943107E93A1C1B3C21 /* ASN1Helper.swift */; };
+		CD8A15546A0ABDFC57FBF8BB4B6604A2 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DBE6DE34E8B2E05EBBD3B303923A46 /* String+Extension.swift */; };
+		D3110F4826343AC94A56117C5D87285F /* Pods-VPN-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A116EAD58E82070F6F4348C53B1F1A /* Pods-VPN-dummy.m */; };
+		E33E0B924AE3E46F1FC699A31D7FED5D /* ASN1Object+ValueReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D13243B414A9BA656EA1DB9A5BB5BF5 /* ASN1Object+ValueReading.swift */; };
+		E92ED587714516888AC580D3310FECBD /* PKC7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E78AD91448A967A31CA15CA72B2AB07 /* PKC7.swift */; };
+		F1A879969F8354E4DEDE509D7CF21414 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A7EA15A31FAD6A51ADED313AFACD3 /* Validation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF475F7B43FBB1DC8CF7946FED0A43DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B57BE90451F6BE7EAE9532832686713;
+			remoteInfo = TPInAppReceipt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01347F56A00A621F58814E0DC9B4752E /* TPInAppReceipt-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TPInAppReceipt-Info.plist"; sourceTree = "<group>"; };
+		0376607133A66DD4761DB338BCC25A05 /* Pods-VPN-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VPN-acknowledgements.markdown"; sourceTree = "<group>"; };
+		09DBE6DE34E8B2E05EBBD3B303923A46 /* String+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "TPInAppReceipt/Source/Vendor/CryptoSwift/String+Extension.swift"; sourceTree = "<group>"; };
+		130F3C53C5A66175199AE5111DA4EE84 /* Pods-VPN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VPN.release.xcconfig"; sourceTree = "<group>"; };
+		1A0BCE112DB5FB80150AE5ED77397BEF /* Pods-VPN-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VPN-acknowledgements.plist"; sourceTree = "<group>"; };
+		1E6C778990D5CDC5F06CF950B403768D /* TPInAppReceipt-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPInAppReceipt-umbrella.h"; sourceTree = "<group>"; };
+		2382F2AB3F305322B073B011BFE5853E /* Data+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extension.swift"; path = "TPInAppReceipt/Source/Data+Extension.swift"; sourceTree = "<group>"; };
+		28A116EAD58E82070F6F4348C53B1F1A /* Pods-VPN-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VPN-dummy.m"; sourceTree = "<group>"; };
+		2A8C92B9D42C482AF9D27EB307A00BAE /* TPInAppReceipt.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TPInAppReceipt.modulemap; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		33740C59AECB36BB9E3E2A779BB21B3E /* InAppReceipt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppReceipt.swift; path = TPInAppReceipt/Source/InAppReceipt.swift; sourceTree = "<group>"; };
+		3D6B9BC62E2A973AAD145C97D356A1F3 /* ASN1Object+Sequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ASN1Object+Sequence.swift"; path = "TPInAppReceipt/Source/ASN1Object+Sequence.swift"; sourceTree = "<group>"; };
+		4AC086E9E182C3B4493BB709B813462A /* Array+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Extension.swift"; path = "TPInAppReceipt/Source/Vendor/CryptoSwift/Array+Extension.swift"; sourceTree = "<group>"; };
+		4D13243B414A9BA656EA1DB9A5BB5BF5 /* ASN1Object+ValueReading.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ASN1Object+ValueReading.swift"; path = "TPInAppReceipt/Source/ASN1Object+ValueReading.swift"; sourceTree = "<group>"; };
+		4D271326DDEB8E9AD257A1798B7C2E31 /* TPInAppReceipt-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPInAppReceipt-prefix.pch"; sourceTree = "<group>"; };
+		4F81F024B391B4DCE72412292B3B5002 /* IARError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IARError.swift; path = TPInAppReceipt/Source/IARError.swift; sourceTree = "<group>"; };
+		52F6CF5BF35D7B100708197B1F93DA83 /* Asn1Coder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Asn1Coder.swift; path = TPInAppReceipt/Source/Asn1Coder.swift; sourceTree = "<group>"; };
+		55B95C7D3B3EA95D0B5AC37C6B93649B /* TPInAppReceipt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TPInAppReceipt.framework; path = TPInAppReceipt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CC1AABE7130208F90E6EA6E16D760B8 /* TPInAppReceipt-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPInAppReceipt-dummy.m"; sourceTree = "<group>"; };
+		5FC6A2053B1254A21A4DA27D324D8990 /* PKCS7Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS7Helper.swift; path = TPInAppReceipt/Source/PKCS7Helper.swift; sourceTree = "<group>"; };
+		603568F42DFFFBAB73357EEC64C95C2E /* Pods-VPN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VPN.debug.xcconfig"; sourceTree = "<group>"; };
+		61E5E3F5DF8B435E6F3555055EE275CC /* Pods-VPN-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VPN-umbrella.h"; sourceTree = "<group>"; };
+		6C57AAD9C72CB2F1E7C9545578AF5871 /* UInt64+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt64+Extension.swift"; path = "TPInAppReceipt/Source/Vendor/CryptoSwift/UInt64+Extension.swift"; sourceTree = "<group>"; };
+		716856C6411A912F25CBA4908B142B5D /* ASN1Object.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ASN1Object.swift; path = TPInAppReceipt/Source/ASN1Object.swift; sourceTree = "<group>"; };
+		726A7EA15A31FAD6A51ADED313AFACD3 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = TPInAppReceipt/Source/Validation.swift; sourceTree = "<group>"; };
+		7303D3974EC6CAC074E1FB19A97865ED /* AppleIncRootCertificate.cer */ = {isa = PBXFileReference; includeInIndex = 1; name = AppleIncRootCertificate.cer; path = TPInAppReceipt/AppleIncRootCertificate.cer; sourceTree = "<group>"; };
+		7E446A32380FFE45ACCACD7148477DE1 /* UInt32+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt32+Extension.swift"; path = "TPInAppReceipt/Source/Vendor/CryptoSwift/UInt32+Extension.swift"; sourceTree = "<group>"; };
+		7E78AD91448A967A31CA15CA72B2AB07 /* PKC7.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKC7.swift; path = TPInAppReceipt/Source/PKC7.swift; sourceTree = "<group>"; };
+		7FBABFEA8BDC59EC64E64C2F409207A6 /* Pods_VPN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VPN.framework; path = "Pods-VPN.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E67334282F13722CC27202FFEFD2C3 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = TPInAppReceipt/Source/Vendor/CryptoSwift/Utils.swift; sourceTree = "<group>"; };
+		84536D4E134F91FB4B38B6FCE1B8E735 /* UInt16+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt16+Extension.swift"; path = "TPInAppReceipt/Source/Vendor/CryptoSwift/UInt16+Extension.swift"; sourceTree = "<group>"; };
+		98E5065CC7C02C186FF73B01458977DA /* Date+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Extension.swift"; path = "TPInAppReceipt/Source/Date+Extension.swift"; sourceTree = "<group>"; };
+		9B53DA554A52B266D1F08CCD12CCB066 /* Pods-VPN-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VPN-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B0C01AFD374B6C3458A81A995994B47C /* TPInAppReceipt.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPInAppReceipt.xcconfig; sourceTree = "<group>"; };
+		B0E2301B723D47908A0F63B41E18386E /* InAppPurchase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppPurchase.swift; path = TPInAppReceipt/Source/InAppPurchase.swift; sourceTree = "<group>"; };
+		C9741AFFAA75C3DA5C396A55BFBB98C3 /* InAppReceiptPayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InAppReceiptPayload.swift; path = TPInAppReceipt/Source/InAppReceiptPayload.swift; sourceTree = "<group>"; };
+		DE220B620518B89E17ECD4BE396C0A65 /* Pods-VPN-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VPN-frameworks.sh"; sourceTree = "<group>"; };
+		E9A5EA2DE18C1B943107E93A1C1B3C21 /* ASN1Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ASN1Helper.swift; path = TPInAppReceipt/Source/ASN1Helper.swift; sourceTree = "<group>"; };
+		F5632C52970016B9F9830892B641A4DE /* ASN1Object+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ASN1Object+Helper.swift"; path = "TPInAppReceipt/Source/ASN1Object+Helper.swift"; sourceTree = "<group>"; };
+		F663D17639511C7C423257E315B6EBE1 /* Initialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Initialization.swift; path = TPInAppReceipt/Source/Initialization.swift; sourceTree = "<group>"; };
+		FA03BDCA2CA6E81E1F40C88A1300EC1A /* Pods-VPN.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VPN.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C0370FF41C6DA7522C8503359E75CFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3013D7DB3BEB194D689B344AF56B7DB9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B12ED7517235033696978D9A05DFC215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068137FD226A608E6395DFF7C38ED395 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		219F522AD204CCC108356D7EB8629CC9 /* Pods-VPN */ = {
+			isa = PBXGroup;
+			children = (
+				FA03BDCA2CA6E81E1F40C88A1300EC1A /* Pods-VPN.modulemap */,
+				0376607133A66DD4761DB338BCC25A05 /* Pods-VPN-acknowledgements.markdown */,
+				1A0BCE112DB5FB80150AE5ED77397BEF /* Pods-VPN-acknowledgements.plist */,
+				28A116EAD58E82070F6F4348C53B1F1A /* Pods-VPN-dummy.m */,
+				DE220B620518B89E17ECD4BE396C0A65 /* Pods-VPN-frameworks.sh */,
+				9B53DA554A52B266D1F08CCD12CCB066 /* Pods-VPN-Info.plist */,
+				61E5E3F5DF8B435E6F3555055EE275CC /* Pods-VPN-umbrella.h */,
+				603568F42DFFFBAB73357EEC64C95C2E /* Pods-VPN.debug.xcconfig */,
+				130F3C53C5A66175199AE5111DA4EE84 /* Pods-VPN.release.xcconfig */,
+			);
+			name = "Pods-VPN";
+			path = "Target Support Files/Pods-VPN";
+			sourceTree = "<group>";
+		};
+		4D243557E9160F643790FF0EB85C1BB0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A8C92B9D42C482AF9D27EB307A00BAE /* TPInAppReceipt.modulemap */,
+				B0C01AFD374B6C3458A81A995994B47C /* TPInAppReceipt.xcconfig */,
+				5CC1AABE7130208F90E6EA6E16D760B8 /* TPInAppReceipt-dummy.m */,
+				01347F56A00A621F58814E0DC9B4752E /* TPInAppReceipt-Info.plist */,
+				4D271326DDEB8E9AD257A1798B7C2E31 /* TPInAppReceipt-prefix.pch */,
+				1E6C778990D5CDC5F06CF950B403768D /* TPInAppReceipt-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TPInAppReceipt";
+			sourceTree = "<group>";
+		};
+		783606A14C4281A45BB39B4523977006 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FBABFEA8BDC59EC64E64C2F409207A6 /* Pods_VPN.framework */,
+				55B95C7D3B3EA95D0B5AC37C6B93649B /* TPInAppReceipt.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C0AA09726EE50881537E03B2C084EF1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				219F522AD204CCC108356D7EB8629CC9 /* Pods-VPN */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CAAF9FFB82DD4CBEAEC108E62F8AA8E6 /* TPInAppReceipt */ = {
+			isa = PBXGroup;
+			children = (
+				4AC086E9E182C3B4493BB709B813462A /* Array+Extension.swift */,
+				52F6CF5BF35D7B100708197B1F93DA83 /* Asn1Coder.swift */,
+				E9A5EA2DE18C1B943107E93A1C1B3C21 /* ASN1Helper.swift */,
+				716856C6411A912F25CBA4908B142B5D /* ASN1Object.swift */,
+				F5632C52970016B9F9830892B641A4DE /* ASN1Object+Helper.swift */,
+				3D6B9BC62E2A973AAD145C97D356A1F3 /* ASN1Object+Sequence.swift */,
+				4D13243B414A9BA656EA1DB9A5BB5BF5 /* ASN1Object+ValueReading.swift */,
+				2382F2AB3F305322B073B011BFE5853E /* Data+Extension.swift */,
+				98E5065CC7C02C186FF73B01458977DA /* Date+Extension.swift */,
+				4F81F024B391B4DCE72412292B3B5002 /* IARError.swift */,
+				B0E2301B723D47908A0F63B41E18386E /* InAppPurchase.swift */,
+				33740C59AECB36BB9E3E2A779BB21B3E /* InAppReceipt.swift */,
+				C9741AFFAA75C3DA5C396A55BFBB98C3 /* InAppReceiptPayload.swift */,
+				F663D17639511C7C423257E315B6EBE1 /* Initialization.swift */,
+				7E78AD91448A967A31CA15CA72B2AB07 /* PKC7.swift */,
+				5FC6A2053B1254A21A4DA27D324D8990 /* PKCS7Helper.swift */,
+				09DBE6DE34E8B2E05EBBD3B303923A46 /* String+Extension.swift */,
+				84536D4E134F91FB4B38B6FCE1B8E735 /* UInt16+Extension.swift */,
+				7E446A32380FFE45ACCACD7148477DE1 /* UInt32+Extension.swift */,
+				6C57AAD9C72CB2F1E7C9545578AF5871 /* UInt64+Extension.swift */,
+				83E67334282F13722CC27202FFEFD2C3 /* Utils.swift */,
+				726A7EA15A31FAD6A51ADED313AFACD3 /* Validation.swift */,
+				EA2EE05DFCC3D250AA76E6A75DB6E3BD /* Resources */,
+				4D243557E9160F643790FF0EB85C1BB0 /* Support Files */,
+			);
+			name = TPInAppReceipt;
+			path = TPInAppReceipt;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				DDB8A8583CF1BDC0E02DB0170AE09380 /* Pods */,
+				783606A14C4281A45BB39B4523977006 /* Products */,
+				9C0AA09726EE50881537E03B2C084EF1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDB8A8583CF1BDC0E02DB0170AE09380 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAAF9FFB82DD4CBEAEC108E62F8AA8E6 /* TPInAppReceipt */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EA2EE05DFCC3D250AA76E6A75DB6E3BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7303D3974EC6CAC074E1FB19A97865ED /* AppleIncRootCertificate.cer */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2363F80CCED7B78AC54B32A3254C350E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A4518EEB2AD1D73B53A0517F902B44F /* Pods-VPN-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B4BA5FEFFE4E3F9892CEE819377247A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EA1951373E877157877F35004EE830A /* TPInAppReceipt-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1B57BE90451F6BE7EAE9532832686713 /* TPInAppReceipt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A79B80625E1B47ED1EFF8906A3BD1B9 /* Build configuration list for PBXNativeTarget "TPInAppReceipt" */;
+			buildPhases = (
+				7B4BA5FEFFE4E3F9892CEE819377247A /* Headers */,
+				A3985DE7C9AC03F8105E58C5B9D9BA60 /* Sources */,
+				5C0370FF41C6DA7522C8503359E75CFD /* Frameworks */,
+				F89D27EC9CD5BF553A510C4B0DC2B82F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TPInAppReceipt;
+			productName = TPInAppReceipt;
+			productReference = 55B95C7D3B3EA95D0B5AC37C6B93649B /* TPInAppReceipt.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		601EE29546BF2384EBD2FA01FC4ADBD5 /* Pods-VPN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90D7F3B66CE4B472A06AD4A1D35E775E /* Build configuration list for PBXNativeTarget "Pods-VPN" */;
+			buildPhases = (
+				2363F80CCED7B78AC54B32A3254C350E /* Headers */,
+				7FD75414A80F7D6B45F155965FAD703F /* Sources */,
+				B12ED7517235033696978D9A05DFC215 /* Frameworks */,
+				E6F024552F32D83F583C703DA4FD6D5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1BE2D20588A23E3255739C9B66879FE /* PBXTargetDependency */,
+			);
+			name = "Pods-VPN";
+			productName = "Pods-VPN";
+			productReference = 7FBABFEA8BDC59EC64E64C2F409207A6 /* Pods_VPN.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 783606A14C4281A45BB39B4523977006 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				601EE29546BF2384EBD2FA01FC4ADBD5 /* Pods-VPN */,
+				1B57BE90451F6BE7EAE9532832686713 /* TPInAppReceipt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6F024552F32D83F583C703DA4FD6D5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F89D27EC9CD5BF553A510C4B0DC2B82F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F832FE9FDF98108E4259787B54D9F6 /* AppleIncRootCertificate.cer in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FD75414A80F7D6B45F155965FAD703F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3110F4826343AC94A56117C5D87285F /* Pods-VPN-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3985DE7C9AC03F8105E58C5B9D9BA60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AB0261316EB7A26BCC86D716EF83EF8 /* Array+Extension.swift in Sources */,
+				3B0A0699070B7A5ACC03EDCAAC67C00C /* Asn1Coder.swift in Sources */,
+				B522AA083307C59AA770AF0C3F0ABD1B /* ASN1Helper.swift in Sources */,
+				9BC8C25298B01FF77E96D260EE2DFBEB /* ASN1Object+Helper.swift in Sources */,
+				7B2D1026B47727ADBAFB6D72F3947B3A /* ASN1Object+Sequence.swift in Sources */,
+				E33E0B924AE3E46F1FC699A31D7FED5D /* ASN1Object+ValueReading.swift in Sources */,
+				53B6DD266ACE2D050ECD1A67DE5BFED6 /* ASN1Object.swift in Sources */,
+				2A2817925C0BA9FB58B6219F09831D49 /* Data+Extension.swift in Sources */,
+				046257E5C4E46E5E020A5BA9327BAFBB /* Date+Extension.swift in Sources */,
+				10F76FB7BEF4370E9549C4F6651A818A /* IARError.swift in Sources */,
+				5BB0BD7961F07C54255597B1AFFA1198 /* InAppPurchase.swift in Sources */,
+				15D260842FD2192D0B00988FEEC0AE35 /* InAppReceipt.swift in Sources */,
+				5F59646BF6B6AE6744596D6438FE1630 /* InAppReceiptPayload.swift in Sources */,
+				B0672C28DC3E2A48DABC76C2033BB4A2 /* Initialization.swift in Sources */,
+				E92ED587714516888AC580D3310FECBD /* PKC7.swift in Sources */,
+				50CF3DC71431C4BC8B2A9958F22C0810 /* PKCS7Helper.swift in Sources */,
+				CD8A15546A0ABDFC57FBF8BB4B6604A2 /* String+Extension.swift in Sources */,
+				80CD1E39E54D50AB36686CAD532671CA /* TPInAppReceipt-dummy.m in Sources */,
+				94E72CE1F7EC2F86DEB7ECD090715A92 /* UInt16+Extension.swift in Sources */,
+				6A2224F64586CCBE104B14B3AA07B1ED /* UInt32+Extension.swift in Sources */,
+				B19EEE553E73D42C55FDDE4F92CBA046 /* UInt64+Extension.swift in Sources */,
+				252CA55ECA86DEBE0244E2C0B48E6958 /* Utils.swift in Sources */,
+				F1A879969F8354E4DEDE509D7CF21414 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1BE2D20588A23E3255739C9B66879FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TPInAppReceipt;
+			target = 1B57BE90451F6BE7EAE9532832686713 /* TPInAppReceipt */;
+			targetProxy = CF475F7B43FBB1DC8CF7946FED0A43DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		24C8D95A94DBC9A352C56432B0C5DB9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 603568F42DFFFBAB73357EEC64C95C2E /* Pods-VPN.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VPN/Pods-VPN-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VPN/Pods-VPN.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		44979DA5F71B15301B99E039AC65AC51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0C01AFD374B6C3458A81A995994B47C /* TPInAppReceipt.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TPInAppReceipt/TPInAppReceipt-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPInAppReceipt/TPInAppReceipt-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TPInAppReceipt/TPInAppReceipt.modulemap";
+				PRODUCT_MODULE_NAME = TPInAppReceipt;
+				PRODUCT_NAME = TPInAppReceipt;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B851B74A119C1147BAE260CB462B9C0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0C01AFD374B6C3458A81A995994B47C /* TPInAppReceipt.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TPInAppReceipt/TPInAppReceipt-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPInAppReceipt/TPInAppReceipt-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TPInAppReceipt/TPInAppReceipt.modulemap";
+				PRODUCT_MODULE_NAME = TPInAppReceipt;
+				PRODUCT_NAME = TPInAppReceipt;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F3BAF38FE0810387061FEE6DE9239C89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 130F3C53C5A66175199AE5111DA4EE84 /* Pods-VPN.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VPN/Pods-VPN-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VPN/Pods-VPN.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A79B80625E1B47ED1EFF8906A3BD1B9 /* Build configuration list for PBXNativeTarget "TPInAppReceipt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44979DA5F71B15301B99E039AC65AC51 /* Debug */,
+				B851B74A119C1147BAE260CB462B9C0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90D7F3B66CE4B472A06AD4A1D35E775E /* Build configuration list for PBXNativeTarget "Pods-VPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24C8D95A94DBC9A352C56432B0C5DB9A /* Debug */,
+				F3BAF38FE0810387061FEE6DE9239C89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
