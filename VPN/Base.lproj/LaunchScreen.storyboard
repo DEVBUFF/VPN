@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -28,16 +28,16 @@
                                 <rect key="frame" x="135" y="865" width="144" height="31"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 14" translatesAutoresizingMaskIntoConstraints="NO" id="Sfx-ig-gpf">
-                                <rect key="frame" x="106" y="272" width="202" height="192"/>
+                                <rect key="frame" x="106" y="313" width="202" height="192"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XGate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Qf-cv-1IQ">
-                                <rect key="frame" x="175.5" y="464" width="63.5" height="27"/>
+                                <rect key="frame" x="175.5" y="505" width="63.5" height="27"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We defend your rights to free  choice and privacy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqa-I8-JUw">
-                                <rect key="frame" x="127.5" y="496" width="159" height="28"/>
+                                <rect key="frame" x="127.5" y="537" width="159" height="28"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -52,7 +52,7 @@
                             <constraint firstItem="0Qf-cv-1IQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="GhS-Dd-cZx"/>
                             <constraint firstItem="Sfx-ig-gpf" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="KnV-CX-jcU"/>
                             <constraint firstItem="suX-ps-Xm6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mi0-xh-rHh"/>
-                            <constraint firstItem="Sfx-ig-gpf" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-80" id="YNx-rl-J1M"/>
+                            <constraint firstItem="Sfx-ig-gpf" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-39" id="YNx-rl-J1M"/>
                             <constraint firstItem="GDE-8X-R7v" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="cLj-dN-Qay"/>
                             <constraint firstItem="hqa-I8-JUw" firstAttribute="top" secondItem="0Qf-cv-1IQ" secondAttribute="bottom" constant="5" id="hTk-Tr-DfF"/>
                             <constraint firstAttribute="bottom" secondItem="suX-ps-Xm6" secondAttribute="bottom" id="yNm-xa-NRH"/>
@@ -70,7 +70,7 @@
         <image name="Vector-8" width="375" height="306"/>
         <image name="Vector-9" width="144" height="31"/>
         <namedColor name="AppOrangeColor">
-            <color red="0.95294117647058818" green="0.41568627450980389" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.95300000905990601" green="0.41600000858306885" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

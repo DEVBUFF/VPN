@@ -8,6 +8,7 @@
 
 import UIKit
 import NetworkExtension
+import Lottie
 
 final class ViewController: UIViewController {
     
@@ -31,6 +32,12 @@ final class ViewController: UIViewController {
     @IBOutlet private weak var countryView: UIView!
     @IBOutlet private weak var countryImageView: UIImageView!
     @IBOutlet private weak var countryLabel: UILabel!
+    @IBOutlet weak var animateImageView: UIImageView!
+
+    
+    private var animationView: AnimationView?
+    
+    private var selectedVPN: ServerVpn?
     
     private var connectionState: ConnectionState = .disconnected
     private var timer: Timer?
@@ -42,11 +49,21 @@ final class ViewController: UIViewController {
         
         
         if connectionState == .connected {
-            VPNHandler.connectVPN()
+            
+            if let vpn = selectedVPN {
+                VPNHandler.connectVPN(with: vpn)
+            }  else {
+                VPNHandler.connectVPN(with: ServerVpn(RemoteAddress: "188.166.28.14",
+                                                      SharedSecret: "123YA2EZlc4oR57kBIOTf3Hv80x3tgcP03aYOZNpvx/0go=",
+                                                      ServerName: "Singapore",
+                                                      isFree: true))
+            }
+            
            // startTimer()
         } else {
             VPNHandler.disconnectVPN()
             stopTimer()
+            setupUI()
         }
         
        // setupUI()
@@ -66,12 +83,15 @@ final class ViewController: UIViewController {
             if status == .connecting {
                 guard connectionState != .connecting else { return }
                 connectionState = .connecting
+                animateImageView.isHidden = false
                 setupUI()
             } else if status == .connected {
                 connectionState = .connected
+                animateImageView.isHidden = true
                 setupUI()
             } else if status == .disconnected {
                 connectionState = .disconnected
+                animateImageView.isHidden = true
                 setupUI()
             }
         }
@@ -101,7 +121,6 @@ extension ViewController {
         }
         
         NotificationCenter.default.addObserver(self, selector: #selector(statusDidChange(_:)), name: NSNotification.Name("kUpdateUIWithStatus"), object: nil)
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -117,7 +136,15 @@ extension ViewController {
             stackViewHeghtConstraint.constant = 0
         }
         
+        getObjects()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
+//        DispatchQueue.main.async {
+//            self.playLottie()
+//        }
     }
     
     override func viewDidLayoutSubviews() {
@@ -131,6 +158,7 @@ extension ViewController {
     
     func setup() {
         setupFasterView()
+        setupAnimateImageView()
     }
     
     func setupFasterView() {
@@ -179,14 +207,45 @@ extension ViewController {
                        timerLabel.text = "Please wait"
             connectLabel.textColor = .appOrange
             view.backgroundColor = .appOrange
-            
         }
+    }
+    
+    func setupAnimateImageView() {
+        var images: [UIImage] = []
+        for n in 0...90 {
+            if n < 10 {
+                let image = UIImage(named: "Comp 1_0000\(n)") ?? UIImage()
+                images.append(image)
+            } else {
+                let image = UIImage(named: "Comp 1_000\(n)") ?? UIImage()
+                images.append(image)
+            }
+        }
+        
+        let animatedImage = UIImage.animatedImage(with: images, duration: 1.8)
+        animateImageView.image = animatedImage
+        animateImageView.isHidden = true
     }
     
 }
 
 //MARK: - Private methods
 extension ViewController {
+    
+    func getObjects() {
+        if let path = Bundle.main.path(forResource: "final", ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let vpnObjs = try JSONDecoder().decode([ServerVpn].self, from: data)
+                self.selectedVPN = vpnObjs.filter({ $0.ServerName == settings.selectedVPN }).first
+                print("-----loaded")
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+   
     
     func showOnboardingIfNeeded() {
         if !settings.didFirstLoad {
@@ -237,6 +296,8 @@ extension ViewController {
     }
     
     func showOrHideCountryView(hide: Bool) {
+        countryLabel.text = selectedVPN?.ServerName
+        countryImageView.image = UIImage(named: "\(selectedVPN?.ServerName ?? "")")
         self.countryView.alpha = hide ? 1 : 0
         UIView.animate(withDuration: 0.5) { [weak self] in
             guard let `self` = self else { return }

@@ -15,6 +15,7 @@ final class Settings {
         static let kDidFirstLoad = "kFirstLoad"
         static let kProtectionIsOn = "kProtectionIsOn"
         static let kAutocennectIsOn = "kAutocennectIsOn"
+        static let kSelectedVPN = "kSelectedVPN"
     }
     
     //MARK: - Private methods
@@ -29,6 +30,15 @@ final class Settings {
 }
 
 extension Settings {
+    
+    var selectedVPN: String? {
+        get {
+            return Settings.value(for: Settings.Keys.kSelectedVPN)
+        }
+        set {
+            Settings.set(value: newValue, for: Settings.Keys.kSelectedVPN)
+        }
+    }
     
     var didFirstLoad: Bool {
         get {

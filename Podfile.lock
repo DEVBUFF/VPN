@@ -1,16 +1,20 @@
 PODS:
+  - lottie-ios (3.1.8)
   - TPInAppReceipt (2.3.4)
 
 DEPENDENCIES:
+  - lottie-ios
   - TPInAppReceipt
 
 SPEC REPOS:
   trunk:
+    - lottie-ios
     - TPInAppReceipt
 
 SPEC CHECKSUMS:
+  lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
   TPInAppReceipt: 00fbe75283ae359f2242b2c8718cdaffb615bd65
 
-PODFILE CHECKSUM: 763769489d2c894287cb0149f987220d9035cb1c
+PODFILE CHECKSUM: 8c7f4c1141467ea397fd7ffa0708b0698cf6b85a
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.9.3

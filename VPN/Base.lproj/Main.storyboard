@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -19,7 +19,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VPN" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="XGate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,6 +41,9 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="170" id="rnx-OZ-YB5"/>
                                                         </constraints>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uXQ-JR-Cri">
+                                                        <rect key="frame" x="86.666666666666686" y="34" width="202" height="202"/>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PMk-EU-kmQ">
                                                         <rect key="frame" x="70" y="230.00000000000003" width="235" height="28.666666666666657"/>
@@ -232,13 +235,17 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="vUb-DC-j0D" firstAttribute="top" secondItem="s7p-Da-nox" secondAttribute="top" id="67z-0R-oFE"/>
+                                                    <constraint firstItem="uXQ-JR-Cri" firstAttribute="centerX" secondItem="s7p-Da-nox" secondAttribute="centerX" id="6LQ-fx-aMh"/>
                                                     <constraint firstAttribute="bottom" secondItem="cQs-ZW-xRl" secondAttribute="bottom" id="FKb-eY-zCc"/>
                                                     <constraint firstItem="vUb-DC-j0D" firstAttribute="centerX" secondItem="s7p-Da-nox" secondAttribute="centerX" id="H4d-JM-Pwl"/>
                                                     <constraint firstItem="PVW-Ur-MyB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="PMk-EU-kmQ" secondAttribute="bottom" constant="20" id="IeB-qG-G97"/>
+                                                    <constraint firstItem="uXQ-JR-Cri" firstAttribute="width" secondItem="s7p-Da-nox" secondAttribute="width" constant="32" id="MQC-bF-g9l"/>
+                                                    <constraint firstItem="uXQ-JR-Cri" firstAttribute="centerY" secondItem="s7p-Da-nox" secondAttribute="centerY" id="UD0-pB-l4q"/>
                                                     <constraint firstItem="cQs-ZW-xRl" firstAttribute="leading" secondItem="1Se-lT-W7q" secondAttribute="leading" id="X7E-fe-z0A"/>
                                                     <constraint firstAttribute="trailing" secondItem="cQs-ZW-xRl" secondAttribute="trailing" id="YNo-ZW-Ysa"/>
                                                     <constraint firstItem="cQs-ZW-xRl" firstAttribute="top" secondItem="PVW-Ur-MyB" secondAttribute="bottom" constant="20" id="Yyr-no-uAq"/>
                                                     <constraint firstItem="PMk-EU-kmQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1Se-lT-W7q" secondAttribute="leading" constant="20" id="aYt-Q0-RIo"/>
+                                                    <constraint firstItem="uXQ-JR-Cri" firstAttribute="height" secondItem="s7p-Da-nox" secondAttribute="height" constant="32" id="aah-C4-BHq"/>
                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PMk-EU-kmQ" secondAttribute="trailing" constant="20" id="dG6-ZM-j5n"/>
                                                     <constraint firstItem="PMk-EU-kmQ" firstAttribute="centerX" secondItem="1Se-lT-W7q" secondAttribute="centerX" id="e8i-ge-mc3"/>
                                                     <constraint firstItem="PMk-EU-kmQ" firstAttribute="top" secondItem="s7p-Da-nox" secondAttribute="bottom" constant="10" id="esS-7G-KXu"/>
@@ -299,11 +306,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="animateImageView" destination="uXQ-JR-Cri" id="tZz-nc-c8j"/>
                         <outlet property="backgroundImageView" destination="scF-fi-FjW" id="bke-Iv-Ewg"/>
                         <outlet property="connectButton" destination="fvh-pU-lMx" id="vRa-5i-Qdp"/>
                         <outlet property="connectLabel" destination="J9H-ZK-nZJ" id="QLq-y6-5pQ"/>
                         <outlet property="countryImageView" destination="kfg-JD-Mja" id="Ih4-vW-ciQ"/>
-                        <outlet property="countryLabel" destination="iIr-rU-2ZQ" id="3GM-hC-ru0"/>
+                        <outlet property="countryLabel" destination="iIr-rU-2ZQ" id="9Xi-Ub-b1k"/>
                         <outlet property="countryView" destination="vUb-DC-j0D" id="eEH-y2-C8U"/>
                         <outlet property="earthImageView" destination="s7p-Da-nox" id="h8S-IK-AOY"/>
                         <outlet property="fasterHolderView" destination="PVW-Ur-MyB" id="3lp-iI-qmy"/>

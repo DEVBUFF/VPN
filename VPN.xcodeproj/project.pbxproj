@@ -42,6 +42,7 @@
 		6BA60F0D24A340FE00266B21 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA60F0B24A340FE00266B21 /* OnboardingViewController.swift */; };
 		6BA60F0E24A340FE00266B21 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA60F0C24A340FE00266B21 /* OnboardingViewController.xib */; };
 		6BA60F1024A34F2D00266B21 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA60F0F24A34F2D00266B21 /* Settings.swift */; };
+		6BCD2B222507AAB3002FE120 /* final.json in Resources */ = {isa = PBXBuildFile; fileRef = 6BCD2B212507AAB3002FE120 /* final.json */; };
 		CF0100EEA8E2BCB3FF10FDFB /* Pods_VPN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D4F68DD50C3B3A665016EA /* Pods_VPN.framework */; };
 /* End PBXBuildFile section */
 
@@ -128,6 +129,7 @@
 		6BA60F0B24A340FE00266B21 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		6BA60F0C24A340FE00266B21 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
 		6BA60F0F24A34F2D00266B21 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		6BCD2B212507AAB3002FE120 /* final.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = final.json; sourceTree = "<group>"; };
 		A3D4F68DD50C3B3A665016EA /* Pods_VPN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VPN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A2654FF53C16751AFA9315 /* Pods-VPN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VPN.debug.xcconfig"; path = "Target Support Files/Pods-VPN/Pods-VPN.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -269,6 +271,7 @@
 				6BA60EDC24A1FD4D00266B21 /* ViewController.swift */,
 				6BA60EEE24A20BDB00266B21 /* LaunchViewController.swift */,
 				6BA60EEF24A20BDB00266B21 /* LaunchViewController.xib */,
+				6BCD2B212507AAB3002FE120 /* final.json */,
 				6BA60EDE24A1FD4D00266B21 /* Main.storyboard */,
 				6B8B877824A3698D00D8609E /* VPNHandler.swift */,
 				6B8B877A24A36A2400D8609E /* KeychainService.swift */,
@@ -421,6 +424,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BCD2B222507AAB3002FE120 /* final.json in Resources */,
 				6BA60EE524A1FD4F00266B21 /* LaunchScreen.storyboard in Resources */,
 				6BA60EED24A2090300266B21 /* Colors.xcassets in Resources */,
 				6B8B879324A4CB3800D8609E /* SettingsViewController.xib in Resources */,

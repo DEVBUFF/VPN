@@ -28,7 +28,6 @@ final class ChooseServerViewController: UIViewController {
         }
     }
     
-
     @IBAction private func backButtonAction(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
@@ -63,6 +62,9 @@ extension ChooseServerViewController {
         
         setup()
         getObjects()
+        if IAPManager.shared.hasSubscription() {
+            settings.selectedVPN = nil
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -106,6 +108,18 @@ private extension ChooseServerViewController {
 //MARK: - Private methods
 private extension ChooseServerViewController {
     
+    func markSelectedIfNeeded() {
+        DispatchQueue.main.async { [unowned self] in
+            self.sortedVPNs.enumerated().forEach { (index, item) in
+                if item.ServerName == settings.selectedVPN {
+                    self.sortedVPNs[index].selected = true
+                } else {
+                    self.sortedVPNs[index].selected = false
+                }
+            }
+        }
+    }
+    
     func showSubscriptionVC() {
         let subsVC = SubscriptionViewController(nibName: "SubscriptionViewController", bundle: nil)
         let nc = UINavigationController(rootViewController: subsVC)
@@ -124,13 +138,13 @@ private extension ChooseServerViewController {
     }
     
     func getObjects() {
-        if let path = Bundle.main.path(forResource: "vpnlist", ofType: "json") {
+        if let path = Bundle.main.path(forResource: "final", ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 let vpnObjs = try JSONDecoder().decode([ServerVpn].self, from: data)
                 self.vpns = vpnObjs
                 self.sortedVPNs = vpnObjs
-
+                self.markSelectedIfNeeded()
             } catch {
                 print(error.localizedDescription)
             }
@@ -159,23 +173,40 @@ extension ChooseServerViewController: UITableViewDataSource {
 extension ChooseServerViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if IAPManager.shared.hasSubscription() {
+            settings.selectedVPN = sortedVPNs[indexPath.row].ServerName
+            markSelectedIfNeeded()
+            tableView.reloadData()
+        } else {
+            let subsVC = SubscriptionViewController(nibName: "SubscriptionViewController", bundle: nil)
+            let nc = UINavigationController(rootViewController: subsVC)
+            nc.modalPresentationStyle = .fullScreen
+            self.present(nc, animated: true, completion: nil)
+        }
         
     }
     
 }
 
+
+
 extension ChooseServerViewController {
     
     struct ServerVpn: Codable {
-        let hostname: String
-        let isFree: Bool
-        let country: String
-        let location: String
-        let name: String
-        let serverID: Int
-        let user: String
-        let pass: String
-        let psk: String
+//        let hostname: String
+//        let isFree: Bool
+//        let country: String
+//        let location: String
+//        let name: String
+//        let serverID: Int
+//        let user: String
+//        let pass: String
+//        let psk: String
+        var RemoteAddress: String
+        var SharedSecret: String
+        var ServerName: String
+        var isFree: Bool?
+        var selected: Bool?
     }
     
 }

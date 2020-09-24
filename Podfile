@@ -7,5 +7,6 @@ target 'VPN' do
 
   # Pods for VPN
   pod 'TPInAppReceipt'
+  pod 'lottie-ios'
 
 end
