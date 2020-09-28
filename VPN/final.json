@@ -1,0 +1,37 @@
+[
+    {
+        "RemoteAddress": "104.131.109.161",
+        "SharedSecret": "123dGJ+eskDhcE6HDaHNgv1PhxeCOFANcqkvla17xXZo8I=",
+        "ServerName": "New York"
+    },
+    {
+        "RemoteAddress": "138.197.154.72",
+        "SharedSecret": "123vknTtU98PgyLpFIAl+E6NbpSoWJ0adjBaV5DXUAmGLY=",
+        "ServerName": "Toronto"
+    },
+    {
+        "RemoteAddress": "139.59.23.137",
+        "SharedSecret": "123UwoJLiMbN09/jAL7wMQKRiMatLXoTGVUekKjocE6/+Y=",
+        "ServerName": "Bangalore"
+    },
+    {
+        "RemoteAddress": "165.22.97.71",
+        "SharedSecret": "1234tVkhbbeSdTh4FoU/AYFhM6fNTHjR3OnQmjwHlX5y98=",
+        "ServerName": "Singapore"
+    },
+    {
+        "RemoteAddress": "167.71.115.165",
+        "SharedSecret": "123H4MyrOYxIehUYBVdisECcwr5Edi/pUjO2efLtxghJdE=",
+        "ServerName": "San francisco"
+    },
+    {
+        "RemoteAddress": "167.99.200.52",
+        "SharedSecret": "123QypAIaxoFvpKtJToZocJSbUcRBhHIfr1+EdtuTSzrZc=",
+        "ServerName": "London"
+    },
+    {
+        "RemoteAddress": "188.166.28.14",
+        "SharedSecret": "123YA2EZlc4oR57kBIOTf3Hv80x3tgcP03aYOZNpvx/0go=",
+        "ServerName": "Amsterdam"
+    }
+]
